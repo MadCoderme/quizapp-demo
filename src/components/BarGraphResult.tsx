@@ -2,7 +2,7 @@ import { useMemo, useEffect, useState } from "react";
 import { Container } from "@chakra-ui/react";
 import { Chart } from "react-charts";
 
-export default function LineGraphResult({ data }) {
+export default function BarGraphResult({ data }) {
   const [gData, setgData] = useState([]);
 
   useEffect(() => {
@@ -33,7 +33,13 @@ export default function LineGraphResult({ data }) {
   return (
     <Container h="md" w="100%" padding={10}>
       {gData.length > 0 ? (
-        <Chart alignSelf="center" data={gData} axes={axes} tooltip />
+        <Chart
+          series={{ type: "bar" }}
+          alignSelf="center"
+          data={gData}
+          axes={axes}
+          tooltip
+        />
       ) : null}
     </Container>
   );

@@ -21,6 +21,7 @@ import {
   Tbody
 } from "@chakra-ui/react";
 import LineGraphResult from "./LineGraphResult";
+import BarGraphResult from "./BarGraphResult";
 import RadarGraph from "./RadarGraph";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -84,6 +85,7 @@ export default function Results({ appConfig }) {
               <TabList>
                 <Tab>List</Tab>
                 <Tab>Line Graph</Tab>
+                <Tab>Bar Graph</Tab>
                 <Tab>Radar Graph</Tab>
               </TabList>
               <TabPanels>
@@ -111,6 +113,9 @@ export default function Results({ appConfig }) {
                 </TabPanel>
                 <TabPanel>
                   <LineGraphResult data={quizzes} />
+                </TabPanel>
+                <TabPanel>
+                  <BarGraphResult data={quizzes} />
                 </TabPanel>
                 <TabPanel>
                   <RadarGraph data={quizzes} />
