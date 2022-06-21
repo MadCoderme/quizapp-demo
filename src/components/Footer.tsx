@@ -28,6 +28,16 @@ export default function Footer() {
             MadCoderme
           </Link>
         </Text>
+        <Text fontWeight="bold">
+          Github:{" "}
+          <Link
+            target="_blank"
+            color="blue.500"
+            href="https://github.com/MadCoderme/quizapp-demo/tree/main/"
+          >
+            MadCoderme/quizapp-demo
+          </Link>
+        </Text>
       </Container>
     </Box>
   );
