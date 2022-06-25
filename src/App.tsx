@@ -17,12 +17,7 @@ import { initializeApp } from "@firebase/app";
 import Navbar from "./components/Navbar";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCN0iiWM4hJJURTdgtA_2JbMMa_wT5aVDM",
-  authDomain: "quizapp-3d282.firebaseapp.com",
-  projectId: "quizapp-3d282",
-  storageBucket: "quizapp-3d282.appspot.com",
-  messagingSenderId: "606276954491",
-  appId: "1:606276954491:web:bdbbf39043558f714ef5de"
+  //config data
 };
 
 const app = initializeApp(firebaseConfig);
